@@ -29,7 +29,7 @@ module "resource_names" {
 module "schemas_registry" {
   source = "../.."
 
-  name        = module.resource_names["registry"].standard
+  name        = module.resource_names["registry"].dns_compliant_minimal_random_suffix
   description = var.description
   tags        = var.tags
 }
