@@ -34,7 +34,7 @@ module "resource_names" {
 module "schemas_registry" {
   source = "../.."
 
-  name        = module.resource_names["registry"].dns_compliant_minimal_random_suffix
+  name        = module.resource_names["registry"].standard
   description = var.description
   tags        = var.tags
 }
